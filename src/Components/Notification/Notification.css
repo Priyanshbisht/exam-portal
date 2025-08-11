@@ -1,0 +1,40 @@
+:root {
+  --beige: #f4dfcc;
+  --near-black: #1c1c1c;
+  --bright-orange-red: #df3e15;
+  --very-light-grey: #fafafa;
+  --deep-red: #8d2e21;
+  --medium-gray: #bcbcbc;
+  --warm-tan: #e2c3aa;
+  --dark-grey: #373737;
+  --very-dark-brownred: #2a0e0a;
+}
+
+.notification-container {
+  padding: 2rem;
+  background-color: var(--beige);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.notification-header {
+  color: var(--bright-orange-red);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.notification-list {
+  list-style: none;
+  padding: 0;
+}
+
+.notification-item {
+  background: var(--very-light-grey);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  color: var(--near-black);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

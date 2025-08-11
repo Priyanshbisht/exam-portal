@@ -1,0 +1,77 @@
+:root {
+  --beige: #f4dfcc;
+  --near-black: #1c1c1c;
+  --bright-orange-red: #df3e15;
+  --very-light-grey: #fafafa;
+  --deep-red: #8d2e21;
+  --medium-gray: #bcbcbc;
+  --warm-tan: #e2c3aa;
+  --dark-grey: #373737;
+  --very-dark-brownred: #2a0e0a;
+}
+
+.profile-container {
+  padding: 2rem;
+  background-color: var(--beige);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-heading {
+  color: var(--bright-orange-red);
+  margin-bottom: 2rem;
+}
+
+.profile-top {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.profile-email {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--near-black);
+}
+
+.profile-info {
+  background: var(--very-light-grey);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.profile-info label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: var(--near-black);
+}
+
+.profile-info p {
+  margin: 0.25rem 0;
+}
+
+.profile-info input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid var(--medium-gray);
+  border-radius: 6px;
+}
+
+.edit-btn {
+  margin-top: 1.5rem;
+  background-color: var(--bright-orange-red);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background-color: var(--deep-red);
+}

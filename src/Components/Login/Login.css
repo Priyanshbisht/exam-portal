@@ -1,0 +1,131 @@
+:root {
+  --beige: #f4dfcc;
+  --near-black: #1c1c1c;
+  --bright-orange-red: #df3e15;
+  --very-light-grey: #fafafa;
+  --deep-red: #8d2e21;
+  --medium-gray: #bcbcbc;
+  --warm-tan: #e2c3aa;
+  --dark-grey: #373737;
+  --very-dark-brownred: #2a0e0a;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--near-black);
+  color: var(--very-light-grey);
+}
+
+.login-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.login-left {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--near-black);
+}
+
+.heading-main {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--very-light-grey);
+}
+
+.sub-heading {
+  font-size: 2rem;
+  color: var(--bright-orange-red);
+  margin-top: 10px;
+}
+
+.desc-text {
+  margin-top: 10px;
+  color: var(--medium-gray);
+}
+
+.input-wrapper {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-grey);
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.input-wrapper .icon {
+  color: var(--warm-tan);
+  margin-right: 12px;
+}
+
+.input-field {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* .input-error {
+  border: 1px solid var(--bright-orange-red);
+} */
+
+.error-message {
+  color: var(--bright-orange-red);
+  margin-top: 6px;
+  font-size: 0.9rem;
+}
+
+.agreement-text {
+  margin-top: 20px;
+  color: var(--medium-gray);
+  font-size: 0.85rem;
+}
+
+.agreement-text a {
+  color: var(--beige);
+  text-decoration: underline;
+}
+
+.login-btn {
+  margin-top: 20px;
+  background-color: var(--bright-orange-red);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-text {
+  margin-top: 20px;
+  color: var(--medium-gray);
+  font-size: 0.9rem;
+}
+
+.signup-text a {
+  color: var(--beige);
+  font-weight: bold;
+}
+
+.login-right {
+  flex: 1;
+  background-color: var(--very-dark-brownred);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-img {
+  max-width: 90%;
+  height: auto;
+}

@@ -1,0 +1,129 @@
+:root {
+  --beige: #f4dfcc;
+  --near-black: #1c1c1c;
+  --bright-orange-red: #df3e15;
+  --very-light-grey: #fafafa;
+  --deep-red: #8d2e21;
+  --medium-gray: #bcbcbc;
+  --warm-tan: #e2c3aa;
+  --dark-grey: #373737;
+  --very-dark-brownred: #2a0e0a;
+}
+
+.domain-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--beige);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.question-card {
+  background: var(--very-light-grey);
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  max-width: 900px;
+  width: 100%;
+  color: var(--near-black);
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timer {
+  background-color: var(--medium-gray);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.timer.danger {
+  background-color: var(--deep-red);
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.question-card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.question {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+.options {
+  margin: 1.5rem 0;
+}
+
+.option {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--warm-tan);
+  padding: 0.75rem;
+  border-radius: 8px;
+}
+
+.option input[type="radio"] {
+  margin-right: 0.75rem;
+  transform: scale(1.3);
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.navigation-buttons button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: var(--bright-orange-red);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navigation-buttons button:hover:not(:disabled) {
+  background-color: var(--deep-red);
+}
+
+.navigation-buttons button:disabled {
+  background-color: var(--medium-gray);
+  cursor: not-allowed;
+}
+
+.result-section {
+  text-align: center;
+}
+
+.result-section button {
+  margin-top: 1rem;
+  background-color: var(--very-dark-brownred);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.result-section button:hover {
+  background-color: var(--dark-grey);
+}
